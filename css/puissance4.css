@@ -1,0 +1,135 @@
+.game{
+    height: 80vh;
+    width: 50vw;
+    background-color: blue;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    margin: 1% 0%;
+}
+
+.tile{
+    background: white;
+    border-radius: 50%;
+    margin: 0% 1%;
+    height: 100%;
+}
+
+.yellow{
+    background: yellow;
+    border-radius: 50%;
+    margin: 0% 1%;
+    height: 100%;
+}
+
+.red{
+    background-color: red;
+    border-radius: 50%;
+    margin: 0% 1%;
+    height: 100%;
+}
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    border-radius: 20px;
+    height: 3vh;
+    border: 2px solid darkgray;
+    transition: all 0.3s ease;
+}
+
+input[type=text]:hover{
+    transform: scale(1.05);
+}
+
+input[type=number]:hover{
+    transform: scale(1.1);
+}
+
+input[type=color]{
+    -webkit-appearance: none;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    height: 3.5vh;
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+input[type=color]:hover, input[type=color]:focus {
+    transform: scale(1.2);
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+}
+
+button{
+    border-radius: 25px;
+    height: 4vh;
+    width: 50%;
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+label{
+    margin-right: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    height: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form>div:nth-child(2), .title{
+    display: flex;
+    justify-content: center;
+}
+
+#form>div:nth-child(2)>div>input {
+    width: 15%;
+    padding: 0px 0px 0px 15px;
+}
+
+#form>div:nth-child(3)>div, #form>div:nth-child(4)>div{
+    display: flex;
+    margin-top: 3%;
+}
+
+#form>div:nth-child(3)>div>input[type=text], #form>div:nth-child(4)>div>input[type=text]{
+    padding: 0px 0px 0px 15px;
+    width: 75%;
+    margin-right: 2%;
+}
+
+#form>div:nth-child(5){
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
